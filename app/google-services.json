@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918629081640",
+    "project_id": "archibook-8eca7",
+    "storage_bucket": "archibook-8eca7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918629081640:android:4afa73453ec6211baacb1d",
+        "android_client_info": {
+          "package_name": "org.techtown.archivebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918629081640-vl9nc907muea4g14tokvm0rtehec96k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0TqHJ_imbvbeg8YtVZcilR42HoyqDWPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918629081640-vl9nc907muea4g14tokvm0rtehec96k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

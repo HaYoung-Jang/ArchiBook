@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/ll_book_selling_list"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/v_profile_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/view_circle_blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_book_selling_nick_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="hyhy"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_book_registerd_date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="2021년 10월 6일"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_book_is_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="판매중"
+                android:textColor="#1482F8"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:background="@drawable/tv_box_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="판매책 : "
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_book_selling_title"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="자바 웹을 다루는 기술"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

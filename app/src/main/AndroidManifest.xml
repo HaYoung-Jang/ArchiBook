@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.archivebook">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArchiveBook"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SellRegisSold"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatMessageList" />
+        <activity android:name=".AdminBookInsert" />
+        <activity android:name=".RecommendDetailList" />
+        <activity android:name=".MyRecordList" />
+        <activity android:name=".MySoldList" />
+        <activity android:name=".MySellingList" />
+        <activity android:name=".UserRegister" />
+        <activity android:name=".RecordInputSearch" />
+        <activity android:name=".SellingDescribeDialog" />
+        <activity android:name=".SellingDetail" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RecordDetail" />
+        <activity android:name=".RecordView" />
+        <activity android:name=".RecordInfo" />
+        <activity android:name=".RecordDescribe" />
+        <activity android:name=".RecordComplete" />
+        <activity android:name=".SellRegisBarcodeResult" />
+        <activity android:name=".SellRegisComplete" />
+        <activity android:name=".SellRegisConfirm" />
+        <activity android:name=".SellRegisCamera" />
+        <activity android:name=".SellRegisDescribe" />
+        <activity android:name=".SellRegisInput" />
+        <activity android:name=".SellRegisSearch" />
+        <activity android:name=".SellRegisBarcode" />
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.techtown.archivebook.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

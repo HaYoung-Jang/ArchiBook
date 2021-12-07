@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ArchiBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 네이버 로그인 연결 값 -->
+    <string name="naver_client_id">uKijFt7iIGTXC7ZrTMTR</string>
+    <string name="naver_client_secret">jjRfj30wc9</string>
+    <string name="naver_client_name">archibook</string>
+</resources>

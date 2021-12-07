@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordView"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_record_view_image"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_record_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp">
+
+        <TextView
+            android:id="@+id/tv_record_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="홍길동전"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_record_view_title"
+            android:text="저자 "
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_date_write"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_author"
+            android:text="기록 작성일 "
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_date_start_and_finish"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date_write"
+            android:text="독서시작일~종료일 "
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date_start_and_finish"
+            android:text="별점"
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_score"
+            android:text="기록내용"
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_record_view_author"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_view_title"
+            android:layout_toRightOf="@id/tv_author"
+            android:text="허균"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_record_view_date_write"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_view_author"
+            android:layout_toRightOf="@id/tv_date_write"
+            android:text="20210929"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_record_view_date_start_and_finish"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_view_date_write"
+            android:layout_toRightOf="@id/tv_date_start_and_finish"
+            android:text="20210910 ~ 20210913"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_record_view_score"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_view_date_start_and_finish"
+            android:layout_toRightOf="@id/tv_score"
+            android:text="5"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_record_view_content"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_record_view_score"
+            android:layout_toRightOf="@id/tv_content"
+            android:text="이 책의 내용은..."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

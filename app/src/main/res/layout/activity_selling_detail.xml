@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellingDetail"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="판매 상세"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:id="@+id/btn_change_sold"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_sell_regis_white"
+            android:text="판매 완료하기"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn_delete"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_book_selling_image"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/img_no_book_image"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_book_selling_describe"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="상세설명 보기"
+                    android:textSize="20sp"
+                    android:textColor="#525252"
+                    android:background="@drawable/button_sell_regis_white"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_book_selling_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/view_circle_blue"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/iv_book_selling_profile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_is_sold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="판매중"
+                    android:textColor="#0000FF"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/tv_book_selling_nick_name"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="100dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="책 제목"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/iv_book_selling_profile"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_date_registerd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10월 15일 (등록일)"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_below="@id/tv_book_selling_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="저자"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_book_selling_date_registerd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_publisher"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="출판사"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_author"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_date_published"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="출판일"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_publisher"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="저자"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_book_selling_date_registerd"
+                    android:layout_toRightOf="@id/tv_author"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="출판사"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_book_selling_author"
+                    android:layout_toRightOf="@id/tv_publisher"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_date_published"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="출판일"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/tv_book_selling_publisher"
+                    android:layout_toRightOf="@id/tv_date_published"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_selling_price_registerd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000 원"
+                    android:textSize="25sp"
+                    android:textColor="#04497E"
+                    android:layout_below="@id/tv_date_published"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"/>
+
+                <Button
+                    android:id="@+id/btn_selling_to_chat"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="채팅으로 거래하기"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_sell_regis_blue"
+                    android:layout_below="@id/tv_date_published"
+                    android:layout_toRightOf="@id/tv_book_selling_price_registerd"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="25dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

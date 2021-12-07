@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    tools:context=".SellingDescribeDialog">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <TextView
+            android:id="@+id/tv_book_selling_describe"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:text="책 상태 설명"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_book_describe_cancel"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="닫기"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_sell_regis_blue"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

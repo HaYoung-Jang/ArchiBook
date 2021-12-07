@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordDetail"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="독서기록장"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:id="@+id/btn_change_public"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_sell_regis_white"
+            android:text="공개로 전환"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn_delete"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_book_record_image"
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_no_book_image" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_book_record_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/view_circle_blue" />
+
+                <TextView
+                    android:id="@+id/tv_book_record_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/iv_book_record_profile"
+                    android:text="닉네임"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_record_locked"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ibtn_unlocked"
+                    android:scaleType="fitCenter"
+                    android:background="#FFFFFF"
+                    android:layout_toRightOf="@id/tv_book_record_nick_name"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_book_record_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_book_record_profile"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="책 제목"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_book_record_date_registerd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_book_record_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="10월 15일 (등록일)"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_book_record_date_registerd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="저자"
+                    android:textColor="#757575"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_date_reading"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_author"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="독서 기간"
+                    android:textColor="#757575"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_book_score"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_date_reading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="별점"
+                    android:textColor="#757575"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_book_record_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_book_record_date_registerd"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tv_author"
+                    android:text="저자"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_book_record_date_reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_book_record_author"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_date_reading"
+                    android:text="20211016 ~ 20211018"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/rb_book_score"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_book_record_date_reading"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@id/tv_book_score"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="2"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_book_score"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="comment"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_book_record_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="책 감상 내용 \n재미있었다. \n흥미로웠다. \n나중에 다시 읽고 싶다.\n~\n~\n~\n~"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellRegisBarcodeResult"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_sell_regis_search_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색 결과가 없습니다."
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/rr_sell_regis_search_result_info"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingLeft="40dp"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="언제까지나 쇼팽"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_isbn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ISBN"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_sell_regis_search_result_title"/>
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="저자"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_isbn"/>
+
+            <TextView
+                android:id="@+id/tv_publisher"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="출판사"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_author"/>
+
+            <TextView
+                android:id="@+id/tv_publish_date"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="출간일"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_publisher"/>
+
+            <TextView
+                android:id="@+id/tv_price_orgin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="정가"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_publish_date"/>
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_isbn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="9791189571214"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/tv_isbn"
+                android:layout_below="@id/tv_sell_regis_search_result_title"/>
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_author"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="나카야마 시치리"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/tv_author"
+                android:layout_below="@id/tv_sell_regis_search_result_isbn"/>
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_publisher"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="블루홀식스(블루홀6)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/tv_publisher"
+                android:layout_below="@id/tv_sell_regis_search_result_author"/>
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_date_published"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="2020.04.29"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/tv_publish_date"
+                android:layout_below="@id/tv_sell_regis_search_result_publisher"/>
+
+            <TextView
+                android:id="@+id/tv_sell_regis_search_result_price_orgin"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="16000"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/tv_price_orgin"
+                android:layout_below="@id/tv_sell_regis_search_result_date_published"/>
+
+            <ImageView
+                android:id="@+id/iv_sell_regis_search_result_image"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_toRightOf="@id/tv_sell_regis_search_result_isbn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sell_regis_input"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:text="수동으로 정보 입력하기"
+        android:textSize="20sp"
+        android:textColor="#757575"
+        android:layout_gravity="center"
+        android:background="@drawable/button_sell_regis_white"
+        android:visibility="visible"
+        android:layout_marginBottom="120dp"/>
+
+</LinearLayout>

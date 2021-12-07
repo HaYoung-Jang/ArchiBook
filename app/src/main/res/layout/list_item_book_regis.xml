@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_search_result_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="언제까지나 쇼팽"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_isbn"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="ISBN"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_search_result_title"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="저자"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_isbn"/>
+
+        <TextView
+            android:id="@+id/tv_publisher"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="출판사"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_author"/>
+
+        <TextView
+            android:id="@+id/tv_publish_date"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="출간일"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_publisher"/>
+
+        <TextView
+            android:id="@+id/tv_price_orgin"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="정가"
+            android:textColor="#757575"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_publish_date"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_isbn"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:text="9791189571214"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_isbn"
+            android:layout_below="@id/tv_search_result_title"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_author"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:text="나카야마 시치리"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_author"
+            android:layout_below="@id/tv_search_result_isbn"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_publisher"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:text="블루홀식스(블루홀6)"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_publisher"
+            android:layout_below="@id/tv_search_result_author"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_date_published"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:text="2020.04.29"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_publish_date"
+            android:layout_below="@id/tv_search_result_publisher"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_price_orgin"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:text="16000"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_price_orgin"
+            android:layout_below="@id/tv_search_result_date_published"/>
+
+        <ImageView
+            android:id="@+id/iv_search_result_image"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/tv_search_result_isbn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/img_no_book_image"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

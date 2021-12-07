@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegister"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 등록"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name 님"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@naver.com"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_user_input_nick_name"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btn_check_available"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:text="중복 확인"
+            android:background="@drawable/buttin_check_white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_is_nick_name_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 사용 가능한 닉네임입니다."
+        android:textColor="#0000FF"
+        android:textSize="15sp"
+        android:layout_marginLeft="25dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필 컬러 설정"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_select_profile_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파랑"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="노랑"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분홍"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초록"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주황"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_purple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보라"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_blue"
+            android:layout_marginLeft="40dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_yellow"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_pink"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_green"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_orange"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/view_circle_purple"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_user_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="회원 등록"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_sell_regis_blue"/>
+
+    </LinearLayout>
+
+</LinearLayout>
